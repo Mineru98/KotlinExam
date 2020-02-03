@@ -1,4 +1,4 @@
-package com.mineru.kotlinexam.view
+package com.mineru.kotlinexam.util
 
 import android.view.LayoutInflater
 import android.view.View

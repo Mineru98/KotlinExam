@@ -20,7 +20,6 @@ class AddActivity : AppCompatActivity() {
 
         contactViewModel = ViewModelProviders.of(this).get(ContactViewModel::class.java)
 
-        // intent null check & get extras
         if (intent != null && intent.hasExtra(EXTRA_CONTACT_NAME) && intent.hasExtra(EXTRA_CONTACT_NUMBER)
             && intent.hasExtra(EXTRA_CONTACT_ID)) {
             add_edittext_name.setText(intent.getStringExtra(EXTRA_CONTACT_NAME))

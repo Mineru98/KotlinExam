@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.mineru.kotlinexam.R
 import com.mineru.kotlinexam.model.Contact
+import com.mineru.kotlinexam.util.ContactAdapter
 import com.mineru.kotlinexam.viewmodel.ContactViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.logging.Logger
@@ -26,7 +27,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         log.info("OnCreate Called")
 
-        // Set contactItemClick & contactItemLongClick lambda
         val adapter = ContactAdapter({ contact ->
             // put extras of contact info & start AddActivity
         }, { contact ->
